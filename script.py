@@ -14,5 +14,5 @@ options = {
 }
 
 css = [ 'css/style.css' ]
-pdfkit.from_file('layout.html', 'out.pdf', options=options, css=css)
+pdfkit.from_file('layout/layout.html', 'out.pdf', options=options, css=css)
 
