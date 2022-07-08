@@ -31,7 +31,6 @@ def render(line):
         return load_html(file_name)
 
     elif is_var(sline):
-        print('hi')
         vars_list = extract_template_vars(sline)
         for v in vars_list:
             line = line.replace(f"${v}$", get_var(v))
