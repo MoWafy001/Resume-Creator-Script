@@ -1,3 +1,4 @@
+from src.layout_gen import layout
 import pdfkit
 
 options = {
@@ -14,5 +15,5 @@ options = {
 }
 
 css = [ 'css/style.css' ]
-pdfkit.from_file('layout/layout.html', 'out.pdf', options=options, css=css)
+pdfkit.from_string(layout, 'out.pdf', options=options, css=css)
 
