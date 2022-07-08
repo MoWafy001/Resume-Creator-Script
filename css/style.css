@@ -1,3 +1,25 @@
 body{
   margin: 0;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.content{
+  padding: 1rem;
+}
+
+.section-title{
+  position: relative;
+  font-weight: lighter;
+  font-size: 2rem;
+  margin: 0;
+  margin-bottom: 1rem;
+}
+.section-title::after{
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 6rem;
+  height: 1px;
+  background: linear-gradient(90deg,#000, #fff);
 }

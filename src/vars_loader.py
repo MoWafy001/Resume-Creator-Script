@@ -4,6 +4,9 @@ with open('vars.txt') as f:
 
 vars_d = {}
 
+while '\n\n' in txt:
+    txt = txt.replace('\n\n','\n')
+
 lines = txt.split('\n')
 
 for l in lines:

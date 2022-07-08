@@ -1,1 +1,10 @@
-name=Moahmed Wafy
+full name = Moahmed Wafy
+
+link1 = https://github.com/MoWafy001
+link1 title = Github
+
+link2 = https://linkedin.com/in/mohamedwafy
+link2 title = LinkedIn
+
+link3 = https://mowafy001.github.io/portfolio/ 
+link3 title = Portfolio
