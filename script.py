@@ -8,3 +8,5 @@ engine = TemplateEngine('layout/layout.html')
 layout = engine.render()
 
 create_pdf(layout)
+
+print(layout)
