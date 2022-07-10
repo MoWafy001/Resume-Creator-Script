@@ -1,0 +1,16 @@
+.skills{
+    display: flex;
+    margin: 0 1;
+    padding: 0;
+    list-style: none;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.skills li{
+    display: block;
+    margin: 0.3rem 0.6rem;
+    padding: 0.6rem 0.7rem;
+    font-size: 1rem;
+    outline: 1px solid #000;
+    box-shadow: 0.3rem 0.3rem 0 0 #000;
+}

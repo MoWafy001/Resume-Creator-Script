@@ -120,8 +120,15 @@ class TemplateEngine:
         else: # dict
             for k in var:
                 nb = b.replace(f"{LIST_DICT_SIMBOL_VALUE}{key}_key{LIST_DICT_SIMBOL_VALUE}", k)
-                nb = nb.replace(f"{LIST_DICT_SIMBOL_VALUE}{key}_val{LIST_DICT_SIMBOL_VALUE}", var[k])
-                out += nb
+                if type(var[k]) == list:
+                    c = 0
+                    for i in var[k]:
+                        nb = nb.replace(f"{LIST_DICT_SIMBOL_VALUE}{key}_val_{c}{LIST_DICT_SIMBOL_VALUE}", i)
+                        c += 1
+                    out += nb
+                else:
+                    nb = nb.replace(f"{LIST_DICT_SIMBOL_VALUE}{key}_val{LIST_DICT_SIMBOL_VALUE}", var[k])
+                    out += nb
 
         return out
             

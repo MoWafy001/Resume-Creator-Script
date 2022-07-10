@@ -1,6 +1,32 @@
 full name: Moahmed Wafy
 
+
 links:
   - GitHub: https://github.com/MoWafy001
   - LinkedIn: https://linkedin.com/in/mohamedwafy
   - Portfolio: https://mowafy001.github.io/portfolio/
+
+
+skills:
+  - Python
+  - Flask
+  - JavaScript
+  - NodeJS
+  - React
+  - PHP
+  - Java
+  - Linux
+  - Google Cloud
+  - AWS
+
+
+experience:
+  - exp1:
+    - date1
+    - |
+      This is a description
+      
+  - exp2:
+    - date2
+    - |
+      This is a description
