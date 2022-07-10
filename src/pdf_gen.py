@@ -3,10 +3,10 @@ import os
 
 options = {
     'page-size': 'Letter',
-    'margin-top': '0',
-    'margin-right': '0',
-    'margin-bottom': '0',
-    'margin-left': '0',
+    'margin-top': '5mm',
+    'margin-right': '5mm',
+    'margin-bottom': '5mm',
+    'margin-left': '5mm',
     'encoding': "UTF-8",
     'custom-header': [
         ('Accept-Encoding', 'gzip')

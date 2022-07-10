@@ -7,6 +7,8 @@ job title: Fullstack Developer
 links:
   - GitHub: https://github.com/MoWafy001
   - LinkedIn: https://linkedin.com/in/mohamedwafy
+  - wafy123445@gmail.com: mailto:wafy123445@gmail.com
+  - "+201127813978": tel:+201127813978
   - Portfolio: https://mowafy001.github.io/portfolio/
 
 
@@ -16,28 +18,78 @@ skills:
   - JavaScript
   - NodeJS
   - React
+  - CSS
   - PHP
+  - Bootstrap
+  - Django
   - Java
   - Linux
   - Google Cloud
   - AWS
+  - Web Scrapping
 
 
 experience:
-  - exp1:
-    - date1
+  - Intern Backend Developer, Airdonex:
+    - Sep 2021 - Dec 2021
     - |
-      This is a description
-      asdfsadf
+      - Created RESTful APIs
+      - Created a login system
+      - Managed a PostgreSQL Database
 
-  - exp2:
-    - date2
+      Highlighted skills: Django - PostgreSQL
+
+  - Fullstack Developer, freelance:
+    - Mar 2021 - May 2021
     - |
-      This is a description
+      - Created a Speech-To-Text API
+      - Another API to convert file formats
+      - Created a Systemd service to automate
+      - processes on a Linux server
+      - Created a flask app to render DZI images
+
+      Highlighted skills: Linux - Flask - Python - API Development
+
+  - Member of the backend team, Google Developer Student Clubs - GDSC Damanhour University:
+    - Aug 2021 - Jun 2022
+    - |
+      - Created a Speech-To-Text API
+      - Another API to convert file formats
+      - Created a Systemd service to automate
+      - processes on a Linux server
+      - Created a flask app to render DZI images
+
+      Highlighted skills: Linux - Flask - Python - API Development
+
 
 
 education:
-  - edu1:
-    - edu1 date
+  - Advanced Web Development Nano Degree, Udacity:
+    - "2021"
     - |
-      desc
+      Highlighted skills:
+      Flask
+      API Development
+      Backend Developement
+      Model View Controller Model
+
+  - Web Development Professional Nano Degree, Udacity:
+    - "2020"
+    - |
+      Highlighted skills:
+      NodeJS
+      Building responsive pages
+      Integrating APIs
+
+  - React Developement Cross-Skilling Nanodegree, Udacity:
+    - "2022"
+    - |
+      Highlighted skills:
+      ReactJS
+      Redux
+
+  - Intermediate Python, DataCamp:
+    - "2022"
+    - |
+      Highlighted skills:
+      Python
