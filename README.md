@@ -16,7 +16,39 @@ pip install -r requirements.txt
 ```
 
 # Run
-1. Add the data you need to display in the resume to `vars.yaml`
+1. Add the data you want to display in the resume to `vars.yaml`
+```yaml
+full name: Full Name
+
+
+job title: Job Title
+
+
+links:
+  - GitHub: https://github.com/MoWafy001
+  - LinkedIn: https://linkedin.com/in/mohamedwafy
+  - wafy123445@gmail.com: mailto:wafy123445@gmail.com
+
+
+skills:
+  - Python
+  - Flask
+  - Web Scrapping
+
+
+experience:
+  - Position, Company:
+    - start date - end date
+    - |
+      description
+
+education:
+  - Degree, University:
+    - start date - end date
+    - |
+      description
+
+```
 2. run the script
 ```
 python script.py
