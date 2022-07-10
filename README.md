@@ -10,10 +10,26 @@ If, for example, you have 3 links in your resume and want to add a 4th link, you
 The layout can be modified to use more variables if needed.
 
 # Install requirements
-To install the required python libararies to run the script.
+The script uses `pdfkit` which depends on `wkhtmltopdf`.
+
+Install wkhtmltopdf:
+
+Debian/Ubuntu:
+```
+$ sudo apt-get install wkhtmltopdf
+```
+
+macOS:
+```
+$ brew install homebrew/cask/wkhtmltopdf
+```
+If you are using Windows, I don't know, search for how to install wkhtmltopdf.
+
+Now, installing the required libraries
 ```
 pip install -r requirements.txt
 ```
+or pip3 for python3
 
 # Run
 1. Add the data you want to display in the resume to `vars.yaml`
