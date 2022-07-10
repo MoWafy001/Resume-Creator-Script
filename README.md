@@ -42,6 +42,7 @@ experience:
     - |
       description
 
+
 education:
   - Degree, University:
     - start date - end date
@@ -55,7 +56,6 @@ python script.py
 ```
 or
 ```
-
 python3 script.py
 ```
 
