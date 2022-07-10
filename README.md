@@ -1,7 +1,7 @@
 ![](.not-important/demo.png)
 
 # Resume Creator
-This is a python script that creates a PDF resume using variables from `vars.yaml`.
+This python script creates PDF resumes using variables from `vars.yaml`.
 
 The script puts the pieces in the `layout` folder together and replaces the variable names with their values in `vars.yaml`.
 
