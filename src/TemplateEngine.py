@@ -113,21 +113,21 @@ class TemplateEngine:
         if type(var) is list:
             for val in var:
                 if type(val) is str:
-                    nb = b.replace(f"{LIST_DICT_SIMBOL_VALUE}{key}_val{LIST_DICT_SIMBOL_VALUE}", val)
+                    nb = b.replace(f"{LIST_DICT_SIMBOL_VALUE}{key}_val{LIST_DICT_SIMBOL_VALUE}", val.replace('\n', '<br>'))
                     out += nb
                 else:
                     out += self.loop_over_list_or_dict(val, b, key)
         else: # dict
             for k in var:
-                nb = b.replace(f"{LIST_DICT_SIMBOL_VALUE}{key}_key{LIST_DICT_SIMBOL_VALUE}", k)
+                nb = b.replace(f"{LIST_DICT_SIMBOL_VALUE}{key}_key{LIST_DICT_SIMBOL_VALUE}", k.replace('\n', '<br>'))
                 if type(var[k]) == list:
                     c = 0
                     for i in var[k]:
-                        nb = nb.replace(f"{LIST_DICT_SIMBOL_VALUE}{key}_val_{c}{LIST_DICT_SIMBOL_VALUE}", i)
+                        nb = nb.replace(f"{LIST_DICT_SIMBOL_VALUE}{key}_val_{c}{LIST_DICT_SIMBOL_VALUE}", i.replace('\n', '<br>'))
                         c += 1
                     out += nb
                 else:
-                    nb = nb.replace(f"{LIST_DICT_SIMBOL_VALUE}{key}_val{LIST_DICT_SIMBOL_VALUE}", var[k])
+                    nb = nb.replace(f"{LIST_DICT_SIMBOL_VALUE}{key}_val{LIST_DICT_SIMBOL_VALUE}", var[k].replace('\n', '<br>'))
                     out += nb
 
         return out
