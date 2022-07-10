@@ -41,6 +41,10 @@ section{
   align-items: center;
 }
 
+.item-row span{
+  white-space: nowrap;
+}
+
 .item h2{
   margin: 0;
   margin-bottom: 1rem;

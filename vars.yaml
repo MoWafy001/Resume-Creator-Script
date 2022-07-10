@@ -1,4 +1,4 @@
-full name: Moahmed Wafy
+full name: Mohamed Wafy
 
 
 links:
@@ -31,3 +31,10 @@ experience:
     - date2
     - |
       This is a description
+
+
+education:
+  - edu1:
+    - edu1 date
+    - |
+      desc
