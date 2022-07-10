@@ -1,15 +1,15 @@
 body{
   margin: 0;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: sans-serif;
 }
 
 .content{
-  padding: 1rem;
+  padding: 1rem 1.5rem;
 }
 
 .section-title{
   position: relative;
-  font-weight: lighter;
+  font-weight: normal;
   font-size: 2rem;
   margin: 0;
   margin-bottom: 1rem;
@@ -29,26 +29,30 @@ section{
 }
 
 .item{
-    padding: 0.5rem 1rem;
+  padding: 0.5rem 1rem;
+  margin-bottom: 1rem;
+  box-shadow: 0.5rem 0.3rem 0 0 #0006,
+              -0.2rem 0 0 0 #0006;
 }
 
 .item-row{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .item h2{
-    margin: 0;
-    margin-bottom: 1rem;
-    padding: 0;
-    width: 100%;
-    font-size: 1.5rem;
-    font-weight: normal;
+  margin: 0;
+  margin-bottom: 1rem;
+  padding: 0;
+  width: 100%;
+  font-size: 1.5rem;
+  font-weight: normal;
 }
 
 .item p{
-    padding: 0;
-    margin: 0;
-    margin-left: 1rem;
+  padding: 0;
+  margin: 0;
+  margin-left: 1rem;
+  font-size: 1rem;
 }
