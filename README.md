@@ -76,4 +76,7 @@ python3 script.py
 ```
 
 # Output
-A pdf file names `out.pdf` will be created when the script is run.
+The name of the output file is the `full name` of the user followed by an `_` followed by the `job title`.
+```
+Full_Name_Job_Title.pdf
+```
