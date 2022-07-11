@@ -135,4 +135,9 @@ class TemplateEngine:
 
     # render
     def render(self):
-        return self.replace_blocks_with_html()
+        job_title = get_var('job title').strip().replace(' ', '_')
+        full_name = get_var('full name').strip().replace(' ', '_')
+        
+        file_name = f"{full_name}_{job_title}"
+
+        return self.replace_blocks_with_html(), file_name

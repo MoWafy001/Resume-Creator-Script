@@ -18,5 +18,5 @@ options = {
 dir_name = 'css'
 css = list(map(lambda x: f"{dir_name}/{x}" , os.listdir(dir_name)))
 
-def create_pdf(layout):
-    pdfkit.from_string(layout, 'out.pdf', options=options, css=css)
+def create_pdf(layout, file_name):
+    pdfkit.from_string(layout, f'{file_name}.pdf', options=options, css=css)
