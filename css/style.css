@@ -26,7 +26,6 @@ body{
 
 section{
   margin-bottom: 1rem;
-  page-break-inside: avoid;
 }
 
 .item{
@@ -35,6 +34,7 @@ section{
   margin-bottom: 2rem;
   box-shadow: 0.5rem 0.3rem 0 0 #0006,
               -0.2rem 0 0 0 #0006;
+  page-break-inside: avoid;
 }
 
 .item-row{
