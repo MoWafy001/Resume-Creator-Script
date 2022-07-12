@@ -1,4 +1,5 @@
-![](.not-important/demo.png)
+![image](https://user-images.githubusercontent.com/47895671/178503283-f519a8a6-3227-4940-bee8-087f8f6280f5.png)
+
 
 # Resume Creator
 This python script creates PDF resumes using variables from `vars.yaml`.
