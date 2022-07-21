@@ -16,6 +16,10 @@ links:
   - Portfolio: https://mowafy001.github.io/portfolio/
 
 
+not_links:
+  - Egypt
+
+
 skills:
   - Python
   - Flask
