@@ -119,8 +119,11 @@ class TemplateEngine:
                 pieces[i] = ''
             else:
                 b = v
-                listordict = get_var(key)
-                out = self.loop_over_list_or_dict(listordict, b, key)
+                try:
+                    listordict = get_var(key)
+                    out = self.loop_over_list_or_dict(listordict, b, key)
+                except:
+                    out = ''
                 pieces[i] = out
                 skip = True
                 key = None
