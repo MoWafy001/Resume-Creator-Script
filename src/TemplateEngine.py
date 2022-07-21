@@ -2,7 +2,6 @@
 I could have probably found some code or a library to do this.
 """
 
-from .vars_loader import get_var
 
 
 BLOCK_SIMBOL = '#'
@@ -14,7 +13,8 @@ LIST_DICT_SIMBOL_VALUE = '|+|'
 
 class TemplateEngine:
     # instantiate
-    def __init__(self, base_file_path):
+    def __init__(self, base_file_path, get_var):
+        self.get_var = get_var
         base_file_path = base_file_path.replace('.html', '')
 
         self.base_file_path = base_file_path
@@ -72,7 +72,7 @@ class TemplateEngine:
             block_html = ''
             if dep is not None:
                 try:
-                    get_var(dep)
+                    self.get_var(dep)
                     block_html = self.load_html(block_name)  
                 except:
                     block_html = ''
@@ -92,10 +92,10 @@ class TemplateEngine:
         vars_found = line.split(VAR_SIMBOL)[1::2]
 
         for var_name in vars_found:
-            var_val = get_var(var_name)
+            var_val = self.get_var(var_name)
 
             line = line.replace(
-                f"{VAR_SIMBOL}{var_name}{VAR_SIMBOL}", get_var(var_name))
+                f"{VAR_SIMBOL}{var_name}{VAR_SIMBOL}", self.get_var(var_name))
 
         return line
 
@@ -120,7 +120,7 @@ class TemplateEngine:
             else:
                 b = v
                 try:
-                    listordict = get_var(key)
+                    listordict = self.get_var(key)
                     out = self.loop_over_list_or_dict(listordict, b, key)
                 except:
                     out = ''
@@ -158,8 +158,8 @@ class TemplateEngine:
 
     # render
     def render(self):
-        job_title = get_var('job title').strip().replace(' ', '_')
-        full_name = get_var('full name').strip().replace(' ', '_')
+        job_title = self.get_var('job title').strip().replace(' ', '_')
+        full_name = self.get_var('full name').strip().replace(' ', '_')
         
         file_name = f"{full_name}_{job_title}"
 
