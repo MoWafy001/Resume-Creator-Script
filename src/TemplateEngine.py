@@ -58,11 +58,31 @@ class TemplateEngine:
     def find_blocks_and_replace(self, line):
         blocks = line.split(BLOCK_SIMBOL)[1::2]
 
-        for block_name in blocks:
-            block_html = self.load_html(block_name)
+        for block in blocks:
+            block_l = block.split('?')
+            block_name = block_l[0]
+            dep = None
+
+            if len(block_l) == 2:
+                dep = block_l[1]
+                if dep.strip() == '':
+                    dep = block_name
+
+            
+            block_html = ''
+            if dep is not None:
+                try:
+                    get_var(dep)
+                    block_html = self.load_html(block_name)  
+                except:
+                    block_html = ''
+            else:
+                block_html = self.load_html(block_name)  
+
+
             block_html = self.replace_blocks_with_html(block_html)
             line = line.replace(
-                f"{BLOCK_SIMBOL}{block_name}{BLOCK_SIMBOL}", block_html)
+                f"{BLOCK_SIMBOL}{block}{BLOCK_SIMBOL}", block_html)
 
         return line
 
