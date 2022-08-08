@@ -31,9 +31,9 @@ section{
 .item{
   padding: 0.2rem 1rem;
   padding-bottom: 1rem;
-  margin-bottom: 2rem;
-  box-shadow: 0.5rem 0.3rem 0 0 #0006,
-              -0.2rem 0 0 0 #0006;
+  margin-bottom: 2.1rem;
+  box-shadow: 0.5rem 0.3rem 0 0 #ff69b466,
+              -0.2rem 0 0 0 #ff69b466;
   page-break-inside: avoid;
 }
 
