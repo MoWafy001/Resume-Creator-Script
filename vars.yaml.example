@@ -4,40 +4,40 @@ template: Default
 full name: Mohamed Wafy
 
 
-job title: Fullstack Developer
+job title: Frontend Developer
 
 
 summary: |
-  Full Stack Web Developer, and a Computer Science student with experience in Frontend Development, Backend Development, and some cloud.
+  A Frontend Developer with experience in Backend Developement, Cloud, and Linux. A Computer Science student. I have experience with React, my portfolio is made using it, SASS, and Bootstrap.
 
 
 links:
+  - Portfolio: https://mowafy001.github.io/portfolio/
   - GitHub: https://github.com/MoWafy001
   - LinkedIn: https://linkedin.com/in/mohamedwafy
   - wafy123445@gmail.com: mailto:wafy123445@gmail.com
   - "+201127813978": tel:+201127813978
-  - Portfolio: https://mowafy001.github.io/portfolio/
 
 
 not_links:
   - Egypt
+  - Egypt | Alex
+  - Egypt | Cairo
 
 
 skills:
-  - Python
-  - Flask
-  - JavaScript
-  - NodeJS
   - React
-  - CSS
-  - PHP
+  - SASS
   - Bootstrap
-  - Django
-  - Java
+  - NodeJS
+  - GitHub
   - Linux
-  - Google Cloud
-  - AWS
-  - Web Scrapping
+  - Cloud
+  - Googling
+  - CSS
+  - JavaScript
+  - Python
+  - PHP
 
 
 experience:
@@ -61,20 +61,25 @@ experience:
 
       Highlighted skills: Linux - Flask - Python - API Development
 
-  - Member of the backend team, Google Developer Student Clubs - GDSC Damanhour University:
+  - Member of The Google Developer Student Club - GDSC Damanhour University:
     - Aug 2021 - Jun 2022
     - |
-      - Created a Speech-To-Text API
-      - Another API to convert file formats
-      - Created a Systemd service to automate
-      - processes on a Linux server
-      - Created a flask app to render DZI images
+      - Teaching fellow students coding, Node JS in particular.
+      - Creating a course and find materials.
+      - Giving online session, and doing projects.
 
-      Highlighted skills: Linux - Flask - Python - API Development
+      Highlighted skills: Team Work - NodeJS
 
 
 
 education:
+  - React Developement Cross-Skilling Nanodegree, Udacity:
+    - "2022"
+    - |
+      Highlighted skills:
+      ReactJS
+      Redux
+
   - Advanced Web Development Nano Degree, Udacity:
     - "2021"
     - |
@@ -91,13 +96,6 @@ education:
       NodeJS
       Building responsive pages
       Integrating APIs
-
-  - React Developement Cross-Skilling Nanodegree, Udacity:
-    - "2022"
-    - |
-      Highlighted skills:
-      ReactJS
-      Redux
 
   - Intermediate Python, DataCamp:
     - "2022"
