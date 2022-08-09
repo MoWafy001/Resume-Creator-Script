@@ -1,0 +1,5 @@
+.summary{
+    font-size: 1.5rem;
+    padding: 1rem;
+    background-image: linear-gradient(90deg, var(--primary-color) -1000%, #fff);
+}

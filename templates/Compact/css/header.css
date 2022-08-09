@@ -1,0 +1,55 @@
+header{
+    display: flex;
+    flex-direction: row;
+    background: var(--primary-color-very-light);
+    padding: 0;
+}
+
+header div:first-child{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    background: #fff;
+}
+header div{
+    padding: 1rem;
+}
+
+.full-name{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: normal;
+    font-size: 3rem;
+    margin: 0;
+    margin-bottom: 0;
+}
+.job-title{
+    position: relative;
+    font-family: sans-serif;
+    font-size: 2rem;
+    font-weight: normal;
+    margin: 0.5rem;
+    color: var(--primary-color);
+}
+
+.links{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width: 50%;
+    flex-wrap: wrap;
+}
+.link{
+    display: block;
+    font-size: 1.2rem;
+    margin: 0.4rem 0.8rem;
+    color: #000;
+    padding: 0.3em 0em;
+    box-shadow: 0 0.2rem 0 0 #0006;
+    text-decoration: none;
+}
+
+.clickable{
+    box-shadow: 0 0.2rem 0 0 var(--primary-color);
+}
