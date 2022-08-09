@@ -35,41 +35,112 @@ or pip3 for python3
 # Run
 1. Add the data you want to display in the resume to `vars.yaml`
 ```yaml
-full name: Full Name
+template: Compact
+
+# color in hex: rrggbb
+primary color: 008080
 
 
-job title: Job Title
+full name: Mohamed Wafy
+
+
+job title: Frontend Developer
 
 
 summary: |
-  summary goes here
-
+  Frontend Developer, Backend Developer, and Computer Science student with experince with frontend and backend technologies, cloud, linux and teamwork.
 
 links:
+  - Portfolio: https://mowafy001.github.io/portfolio/
   - GitHub: https://github.com/MoWafy001
   - LinkedIn: https://linkedin.com/in/mohamedwafy
   - wafy123445@gmail.com: mailto:wafy123445@gmail.com
+  - "+201127813978": tel:+201127813978
+
+
+not_links:
+  - Egypt
+  - Egypt | Alex
+  - Egypt | Cairo
 
 
 skills:
+  - React
+  - SASS
+  - Bootstrap
+  - NodeJS
+  - GitHub
+  - Linux
+  - Cloud
+  - Googling
+  - CSS
+  - JavaScript
   - Python
-  - Flask
-  - Web Scrapping
+  - PHP
 
 
 experience:
-  - Position, Company:
-    - start date - end date
+  - Intern Backend Developer, Airdonex:
+    - Sep 2021 - Dec 2021
     - |
-      description
+      - Created RESTful APIs
+      - Created a login system
+      - Managed a PostgreSQL Database
+
+      Highlighted skills: Django - PostgreSQL
+
+  - Fullstack Developer, freelance:
+    - Mar 2021 - May 2021
+    - |
+      - Created a Speech-To-Text API
+      - Another API to convert file formats
+      - Created a Systemd service to automate
+      - processes on a Linux server
+      - Created a flask app to render DZI images
+
+      Highlighted skills: Linux - Flask - Python - API Development
+
+  - Member of The Google Developer Student Club - GDSC Damanhour University:
+    - Aug 2021 - Jun 2022
+    - |
+      - Teaching fellow students coding, Node JS in particular.
+      - Creating a course and find materials.
+      - Giving online session, and doing projects.
+
+      Highlighted skills: Team Work - NodeJS
+
 
 
 education:
-  - Degree, University:
-    - start date - end date
+  - React Developement Cross-Skilling Nanodegree, Udacity:
+    - "2022"
     - |
-      description
+      Highlighted skills:
+      ReactJS
+      Redux
 
+  - Advanced Web Development Nano Degree, Udacity:
+    - "2021"
+    - |
+      Highlighted skills:
+      Flask
+      API Development
+      Backend Developement
+      Model View Controller Model
+
+  - Web Development Professional Nano Degree, Udacity:
+    - "2020"
+    - |
+      Highlighted skills:
+      NodeJS
+      Building responsive pages
+      Integrating APIs
+
+  - Intermediate Python, DataCamp:
+    - "2022"
+    - |
+      Highlighted skills:
+      Python
 ```
 2. run the script
 ```
