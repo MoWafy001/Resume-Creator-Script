@@ -1,4 +1,4 @@
-![image](https://user-images.githubusercontent.com/47895671/178503283-f519a8a6-3227-4940-bee8-087f8f6280f5.png)
+![image](https://user-images.githubusercontent.com/47895671/183772428-71ee41ec-d5dc-4219-90a9-f91f83a3dd1b.png)
 
 
 # Resume Creator
