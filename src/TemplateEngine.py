@@ -4,7 +4,7 @@ I could have probably found some code or a library to do this.
 
 
 
-BLOCK_SIMBOL = '#'
+BLOCK_SIMBOL = '%block%'
 VAR_SIMBOL = '$'
 
 LIST_DICT_SIMBOL = '||'
@@ -60,7 +60,7 @@ class TemplateEngine:
 
         for block in blocks:
             block_l = block.split('?')
-            block_name = block_l[0]
+            block_name = block_l[0].strip()
             dep = None
 
             if len(block_l) == 2:

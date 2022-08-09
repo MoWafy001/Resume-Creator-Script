@@ -1,4 +1,7 @@
-template: Default
+template: Compact
+
+# color in hex: rrggbb
+primary color: 008080
 
 
 full name: Mohamed Wafy
@@ -8,8 +11,7 @@ job title: Frontend Developer
 
 
 summary: |
-  A Frontend Developer with experience in Backend Developement, Cloud, and Linux. A Computer Science student. I have experience with React, my portfolio is made using it, SASS, and Bootstrap.
-
+  Frontend Developer, Backend Developer, and Computer Science student with experince with frontend and backend technologies, cloud, linux and teamwork.
 
 links:
   - Portfolio: https://mowafy001.github.io/portfolio/

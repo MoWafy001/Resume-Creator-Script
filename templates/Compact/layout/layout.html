@@ -8,18 +8,26 @@
     <meta name="pdfkit-margin-bottom" content="5mm"/>
     <meta name="pdfkit-margin-left" content="5mm"/>
 
+    <style>
+      :root{
+          --primary-color: #$primary color$;
+          --primary-color-light: #$primary color$66;
+          --primary-color-very-light: #$primary color$11;
+      }
+    </style>
+
   </head>
 
   <body>
-    #header#
+    %block% header %block%
     <div class="content">
       <div class="two-halfs">
-        #summary#
-        #skills#
+        %block% summary %block%
+        %block% skills %block%
       </div>
       <div class="two-halfs">
-        #experience?#
-        #education?#
+        %block% experience? %block%
+        %block% education? %block%
       </div>
     </div>
   </body>
