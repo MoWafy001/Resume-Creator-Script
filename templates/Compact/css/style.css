@@ -69,12 +69,17 @@ section{
   justify-content: center;
   margin: 0;
 }
-.two-halfs section{
+
+.two-halfs div.half{
+  padding: 0;
   width: 48%;
+}
+
+.two-halfs div.half section{
   margin: 0;
   margin: 0;
 }
 
-.two-halfs section:first-child{
+.two-halfs div.half:first-child{
   margin-right: 4%;
 }
