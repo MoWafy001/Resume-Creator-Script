@@ -1,7 +1,14 @@
-from src.vars_loader import get_var
+from src.vars_loader import VarsReader
 from src.TemplateEngine import TemplateEngine
 from src.pdf_gen import create_pdf
+import sys
 
+if len(sys.argv) < 2:
+    vars_file_path = "vars.yaml"
+else:
+    vars_file_path = sys.argv[1]
+
+get_var = VarsReader('vars.yaml').get_var
 
 try:
     template = get_var('template')
@@ -16,4 +23,5 @@ layout, file_name = engine.render()
 
 create_pdf(layout, file_name, template)
 
-print(layout)
+#print(layout)
+print(file_name, 'created')
