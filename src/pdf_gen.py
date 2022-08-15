@@ -16,5 +16,7 @@ def create_pdf(layout, file_name, template):
     dir_name = f'templates/{template}/css'
     css = list(map(lambda x: f"{dir_name}/{x}" , os.listdir(dir_name)))
 
+    if 'out' not in os.listdir():
+        os.mkdir('out')
 
-    pdfkit.from_string(layout, f'{file_name}.pdf', options=options, css=css)
+    pdfkit.from_string(layout, f'out/{file_name}.pdf', options=options, css=css)
