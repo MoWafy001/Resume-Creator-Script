@@ -3,3 +3,4 @@ env/
 __pycache__/
 vars.yaml
 *.swp
+yamls/
