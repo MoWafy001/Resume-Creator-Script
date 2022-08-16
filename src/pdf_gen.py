@@ -10,13 +10,13 @@ options = {
 }
 
 
-def create_pdf(layout, file_name, template):
+def create_pdf(layout, file_name, template, script_dir):
 
     # load the css file names automaticlly from the css directory
-    dir_name = f'templates/{template}/css'
+    dir_name = f'{script_dir}/templates/{template}/css'
     css = list(map(lambda x: f"{dir_name}/{x}" , os.listdir(dir_name)))
 
-    if 'out' not in os.listdir():
-        os.mkdir('out')
+    if 'out' not in os.listdir(script_dir):
+        os.mkdir(f'{script_dir}/out')
 
-    pdfkit.from_string(layout, f'out/{file_name}.pdf', options=options, css=css)
+    pdfkit.from_string(layout, f'{script_dir}/out/{file_name}.pdf', options=options, css=css)
