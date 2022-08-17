@@ -83,3 +83,6 @@ section{
 .two-halfs div.half:first-child{
   margin-right: 4%;
 }
+.Education{
+  page-break-inside: avoid;
+}
