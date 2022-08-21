@@ -1,3 +1,6 @@
+from .HTMLLoader import HTMLLoader
+
+
 """
 I could have probably found some code or a library to do this.
 """
@@ -23,21 +26,12 @@ class TemplateEngine:
         # the path of the directory where the HTML files are
         self.html_path = '/'.join(self.base_file_path.split('/')[:-1])
 
+        # HTML Loader
+        html_loader = HTMLLoader(self.html_path)
+        self.load_html = html_loader.load_html
+
         # get the HTML of the base HTML file
-        self.html = self.load_base_html()
-
-
-    # load html
-    def load_html(self, file_name):
-        with open(f"{self.html_path}/{file_name}.html") as f:
-            html = f.read().strip()
-
-        return html
-
-
-    # load base html
-    def load_base_html(self):
-        return self.load_html(self.base_file_name)
+        self.html = self.load_html(self.base_file_name)
 
 
     # replace blocks with html
