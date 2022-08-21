@@ -18,10 +18,10 @@ class TemplateEngine:
 
         # base HTML file path
         self.base_file_path = base_file_path.replace('.html', '')
-        self.base_file_name = base_file_path.split('/')[-1]
+        self.base_file_name = self.base_file_path.split('/')[-1]
 
         # the path of the directory where the HTML files are
-        self.html_path = '/'.join(base_file_path.split('/')[:-1])
+        self.html_path = '/'.join(self.base_file_path.split('/')[:-1])
 
         # get the HTML of the base HTML file
         self.html = self.load_base_html()
