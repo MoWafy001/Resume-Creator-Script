@@ -35,15 +35,15 @@ class TemplateEngine:
 
 
     # replace blocks with html
-    def replace_blocks_with_html(self, html=None):
+    def parse_html(self, html=None):
         if html is None:
             html = self.html
 
-        html = self.find_list_and_dicts_and_replace(html)
+        html = self.handel_lists_and_dicts(html)
 
         html_lines = html.split('\n')
-        html_lines = list(map(self.find_blocks_and_replace, html_lines))
-        html_lines = list(map(self.find_vars_and_replace, html_lines))
+        html_lines = list(map(self.handel_blocks, html_lines))
+        html_lines = list(map(self.handel_variables, html_lines))
 
         html = '\n'.join(html_lines)
 
@@ -51,7 +51,7 @@ class TemplateEngine:
 
 
     # find blocks in a line and replace
-    def find_blocks_and_replace(self, line):
+    def handel_blocks(self, line):
         blocks = line.split(BLOCK_SIMBOL)[1::2]
 
         for block in blocks:
@@ -76,7 +76,7 @@ class TemplateEngine:
                 block_html = self.load_html(block_name)  
 
 
-            block_html = self.replace_blocks_with_html(block_html)
+            block_html = self.parse_html(block_html)
             line = line.replace(
                 f"{BLOCK_SIMBOL}{block}{BLOCK_SIMBOL}", block_html)
 
@@ -84,7 +84,7 @@ class TemplateEngine:
 
 
     # find values in a line and replace
-    def find_vars_and_replace(self, line):
+    def handel_variables(self, line):
         vars_found = line.split(VAR_SIMBOL)[1::2]
 
         for var_name in vars_found:
@@ -97,7 +97,7 @@ class TemplateEngine:
 
     
     # find list and dicts and replace
-    def find_list_and_dicts_and_replace(self, html):
+    def handel_lists_and_dicts(self, html):
         pieces = html.split(LIST_DICT_SIMBOL)
 
         keys_blocks = {}
@@ -159,4 +159,4 @@ class TemplateEngine:
         
         file_name = f"{full_name}_{job_title}"
 
-        return self.replace_blocks_with_html(), file_name
+        return self.parse_html(), file_name
