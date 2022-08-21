@@ -3,7 +3,6 @@ I could have probably found some code or a library to do this.
 """
 
 
-
 BLOCK_SIMBOL = '%block%'
 VAR_SIMBOL = '$'
 
@@ -14,14 +13,17 @@ LIST_DICT_SIMBOL_VALUE = '|+|'
 class TemplateEngine:
     # instantiate
     def __init__(self, base_file_path, get_var):
+        # to get variables
         self.get_var = get_var
-        base_file_path = base_file_path.replace('.html', '')
 
-        self.base_file_path = base_file_path
-
+        # base HTML file path
+        self.base_file_path = base_file_path.replace('.html', '')
         self.base_file_name = base_file_path.split('/')[-1]
+
+        # the path of the directory where the HTML files are
         self.html_path = '/'.join(base_file_path.split('/')[:-1])
 
+        # get the HTML of the base HTML file
         self.html = self.load_base_html()
 
 
