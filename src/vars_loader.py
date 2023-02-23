@@ -1,19 +1,54 @@
 import yaml
-
+import os
 
 class VarsReader:
     def __init__(self, vars_path='vars.yaml'):
+        if vars_path.startswith('/'):
+            self.current_dir = '/'.join(vars_path.split('/')[:-1])
+        else:
+            self.current_dir = os.getcwd() + '/' + '/'.join(vars_path.split('/')[:-1])
+        
         self.vars_d = {}
         self.open_yaml(vars_path)
 
 
     def open_yaml(self, vars_path):
+        if vars_path.startswith("$"):
+            vars_path = vars_path.replace('$', self.current_dir, 1)
+
         with open(vars_path) as f:
-            self.vars_d = yaml.safe_load(f)
+            loaded_vars = yaml.safe_load(f)
+            self.apply_vars(loaded_vars)
+
+            self.loadInheritedVars()
+
+    def apply_vars(self, loaded_vars):
+        # only apply vars if they are not already in vars_d
+        for key, value in loaded_vars.items():
+            if key not in self.vars_d:
+                self.vars_d[key] = value
+
+    def loadInheritedVars(self):
+        if 'inherit' not in self.vars_d:
+            return
+
+        inherit = self.vars_d['inherit']
+
+        # remove inherit from vars_d
+        self.vars_d.pop('inherit')
+
+        # if inherit is a list
+        if isinstance(inherit, list):
+            for i in inherit:
+                self.open_yaml(i)
+
+        # if inherit is a string
+        if isinstance(inherit, str):
+            self.open_yaml(inherit)
 
 
     def get_var(self, var_name):
         if var_name not in self.vars_d:
-            raise Exception(f'Variable {var_name} not found')
+            raise Exception(f'({var_name}) not found')
         else:
             return self.vars_d[var_name]
