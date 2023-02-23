@@ -3,6 +3,7 @@ import yaml
 
 class VarsReader:
     def __init__(self, vars_path='vars.yaml'):
+        self.vars_d = {}
         self.open_yaml(vars_path)
 
 

@@ -18,7 +18,7 @@ vars_file_path = f"{script_dir}/vars.yaml" \
                 # The default YAML file to use
 
 vars_file_path = sys.argv[1] if len(sys.argv) >= 2 else vars_file_path \
-                # Getting a YAML file path as a CLI argument
+                # Getting a YAML file path from a CLI argument
 
 get_var = VarsReader(vars_file_path).get_var \
                 # will be used to read from the YAML file
@@ -29,7 +29,7 @@ template = 'Default' # The default resume template
 try:
     template = get_var('template')
 except:
-    pass
+    print("No template specified in the YAML file, using the default template")
 
 
 """ 

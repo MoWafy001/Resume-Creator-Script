@@ -8,7 +8,6 @@ I could have probably found some code or a library to do this.
 
 
 class TemplateEngine:
-    # instantiate
     def __init__(self, base_file_path, get_var):
         # to get variables
         self.get_var = get_var
