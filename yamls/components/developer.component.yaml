@@ -1,0 +1,120 @@
+# $ = current dir
+inherit:
+  - $/general.component.yaml
+
+template: Compact
+
+# color in hex: rrggbb
+primary color: "2045ff"
+
+skills:
+  - API Development
+  - AWS
+  - Agile
+  - C++
+  - CI/CD
+  - CSS
+  - Cloud
+  - Database Design
+  - Django
+  - Docker
+  - Flask
+  - Git
+  - Googling
+  - Java
+  - JavaScript
+  - Laravel
+  - Linux
+  - MongoDB
+  - NestJS
+  - NoSQL
+  - NodeJS
+  - PHP
+  - Postman
+  - Python
+  - REST
+  - React
+  - Ruby
+  - Ruby On Rails
+  - SCSS
+  - SOLID
+  - SQL
+  - Scripting
+  - TypeScript
+
+projects:
+  - Zoom Clone:
+      - |
+        A simple web video, and audio call app using peer-to-peer, and socket connections.
+
+        Highlighted skills: SocketIO - PeerJS - NodeJS
+        GitHub: https://github.com/MoWafy001/zoom-clone-2.0
+
+  - Automatic File Converter/ Viewer:
+      - |
+        - First Part  | Python Systemd service to automatically convert huge SVS images into DZI (Deep Zoom Images) 
+        - Second Part | Web API, and a web viewer for the DZI files.
+
+        Highlighted Skills: Python - Linux - Systemd - API Development - Web Development
+
+  - Resume Creator:
+      - |
+        - Automatic creator of resumes using YAML files to fill templates.
+        - A custom template engine and syntax was created for this project
+        - This resume, and its template was created using this code.
+
+        Highlighted Skills: Python - Template Engines
+
+experience:
+  - Backend Developer, Faayiz, Part Time:
+      - Aug 2022 - Present
+      - |
+        - Started as an Intern then part time
+        - Built RESTful APIs
+        - Worked with Micoservices
+        - Managed MongoDB databases
+        - Wrote scripts
+        - Worked with Docker
+
+        Highlighted skills: NestJS - TypeScript - Node JS - MongoDB - API Development - Docker
+
+  - Intern Backend Developer, Airdonex:
+      - Sep 2021 - Dec 2021
+      - |
+        Highlighted skills: Django - PostgreSQL - Python
+
+  - Freelance Fullstack Developer:
+      - Mar 2021 - May 2021
+      - |
+        - Created a web application to convert speech to text
+        - Created a Linux Systemd service to find and convert medical image files (SVS files) to another format (DZI) to be used by another app.
+        - Created an API to track the conversion of files
+        - Created a web app to view the DZI files on the server
+
+        Highlighted skills: Linux - Flask - Python - API Development - Systemd
+
+education:
+  - Computer Science, Bachelor's degree, Damanhour University:
+      - "2020 - 2024"
+      - |
+        Undergrad Student, GPA: 3.6
+
+  - React Developement Cross-Skilling Nanodegree, Udacity:
+      - "2022"
+      - |
+        Highlighted skills: React JS - Redux
+
+  - Advanced Web Development Nano Degree, Udacity:
+      - "2021"
+      - |
+        Highlighted skills: Flask - API Development - Backend Development - Model View Controller
+
+  - Web Development Professional Nano Degree, Udacity:
+      - "2020"
+      - |
+        Highlighted skills: Node JS - Building responsive pages - Integrating APIs
+
+  - Intermediate Python, DataCamp:
+      - "2022"
+      - |
+        Highlighted skills: Python
