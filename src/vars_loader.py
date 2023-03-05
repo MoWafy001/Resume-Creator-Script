@@ -1,26 +1,28 @@
 import yaml
 import os
 
+
 class VarsReader:
     def __init__(self, vars_path='vars.yaml'):
         if vars_path.startswith('/'):
             self.current_dir = '/'.join(vars_path.split('/')[:-1])
         else:
-            self.current_dir = os.getcwd() + '/' + '/'.join(vars_path.split('/')[:-1])
-        
+            self.current_dir = os.getcwd() + '/' + \
+                '/'.join(vars_path.split('/')[:-1])
+
         self.vars_d = {}
         self.open_yaml(vars_path)
 
-
-    def open_yaml(self, vars_path):
+    def open_yaml(self, vars_path, vars_path_dir=None):
         if vars_path.startswith("$"):
-            vars_path = vars_path.replace('$', self.current_dir, 1)
+            vars_path = vars_path.replace(
+                '$', self.current_dir if vars_path_dir is None else vars_path_dir, 1)
 
         with open(vars_path) as f:
             loaded_vars = yaml.safe_load(f)
             self.apply_vars(loaded_vars)
 
-            self.loadInheritedVars()
+            self.loadInheritedVars(vars_path)
 
     def apply_vars(self, loaded_vars):
         # only apply vars if they are not already in vars_d
@@ -28,9 +30,10 @@ class VarsReader:
             if key not in self.vars_d:
                 self.vars_d[key] = value
 
-    def loadInheritedVars(self):
+    def loadInheritedVars(self, vars_path):
         if 'inherit' not in self.vars_d:
             return
+        vars_path = '/'.join(vars_path.split('/')[:-1])
 
         inherit = self.vars_d['inherit']
 
@@ -40,12 +43,11 @@ class VarsReader:
         # if inherit is a list
         if isinstance(inherit, list):
             for i in inherit:
-                self.open_yaml(i)
+                self.open_yaml(i, vars_path)
 
         # if inherit is a string
         if isinstance(inherit, str):
-            self.open_yaml(inherit)
-
+            self.open_yaml(inherit, vars_path)
 
     def get_var(self, var_name):
         if var_name not in self.vars_d:
