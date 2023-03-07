@@ -2,13 +2,7 @@
 
 
 # Resume Creator
-This python script creates PDF resumes using variables from `vars.yaml`.
-
-The script puts the pieces in the `layout` folder together and replaces the variable names with their values in `vars.yaml`.
-
-If, for example, you have 3 links in your resume and want to add a 4th link, you can just add the 4th link to the `links` array in `vars.yaml`.
-
-The layout can be modified to use more variables if needed.
+This python script creates PDF resumes using variables from a YAML file. You can give it a YAML file to use, or a directory if you want to process multiple YAML files one after another. If no file name, or directory was passed, it will look for `vars.yaml` as its input YAML file by default.
 
 # Install requirements
 The script uses `pdfkit` which depends on `wkhtmltopdf`.
@@ -32,8 +26,11 @@ pip install -r requirements.txt
 ```
 or pip3 for python3
 
-# Run
-1. Add the data you want to display in the resume to `vars.yaml`
+# Usage
+1. Add the data you want to display in the resume to `vars.yaml` or the YAML file you want to use. Some fields are requried and some aren't, depending on the template.
+
+Look in the `yamls` directory for examples.
+
 ```yaml
 template: Compact
 
@@ -143,12 +140,17 @@ education:
       Python
 ```
 2. run the script
-```
-python script.py
-```
-or
-```
+```bash
+# this will use vars.yaml by default
 python3 script.py
+```
+```bash
+# this will use a specific yaml file
+python3 script.py file.yaml
+```
+```bash
+# This will look for a directory named "yamls" and process all the yaml files in it, one by one
+python3 script.py yamls
 ```
 
 # Output
