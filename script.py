@@ -6,7 +6,7 @@ import os
 
 
 """ 
-Setting up variable 
+Setting up variables
 """
 script_dir = get_script_dir()  # Where the this script is located
 vars_file_path = get_vars_path(script_dir)  # Where the vars.yaml is located
