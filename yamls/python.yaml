@@ -1,8 +1,0 @@
-# $ = current dir
-inherit:
-  - $/components/developer.component.yaml
-
-summary: |
-  Python Developer, and an undergrad CS student. Experienced in backend technologies, Linux, scripting, automation, and anything that can be done with python. Hardworking, and ambitious. I prefer working remotely because of college, and can probably work on site in Egypt; Alexandria or Cairo.
-  
-job title: Python Developer

@@ -7,6 +7,9 @@ template: Compact
 # color in hex: rrggbb
 primary color: "2045ff"
 
+summary: |
+  I am a Fullstack Developer, experienced in frontend, and backend technologies, in addition to Linux, the cloud, and scripting. I am currently studying to get my Bachelor's degree in Computer Science. I have 1 year of work experience.
+  
 skills:
   - API Development
   - AWS

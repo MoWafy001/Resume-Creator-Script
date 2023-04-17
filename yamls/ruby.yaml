@@ -2,4 +2,6 @@
 inherit:
   - $/components/developer.component.yaml
 
-job title: Frontend Developer
+primary color: "e0115f"
+
+job title: Ruby Developer
