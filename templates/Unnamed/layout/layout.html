@@ -1,0 +1,36 @@
+<html>
+
+  <head>
+
+    <meta name="pdfkit-page-size" content="A4"/>
+    <meta name="pdfkit-margin-top" content="0mm"/>
+    <meta name="pdfkit-margin-right" content="0mm"/>
+    <meta name="pdfkit-margin-bottom" content="0mm"/>
+    <meta name="pdfkit-margin-left" content="0mm"/>
+
+    <style>
+      :root{
+          --primary-color: #$primary color$;
+          --primary-color-light: #$primary color$66;
+          --primary-color-very-light: #$primary color$11;
+      }
+    </style>
+
+  </head>
+
+  <body>
+    <div class="content">
+      <div class="col">
+        %block% header %block%
+        %block% summary %block%
+        %block% skills %block%
+      </div>
+      <div class="col">
+        %block% experience? %block%
+        %block% education? %block%
+        %block% projects? %block%
+      </div>
+    </div>
+  </body>
+
+</html>

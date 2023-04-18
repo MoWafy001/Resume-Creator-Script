@@ -2,13 +2,20 @@
 inherit:
   - $/general.component.yaml
 
-template: Compact
+template: Unnamed
 
 # color in hex: rrggbb
-primary color: "2045ff"
+primary color: "222222"
 
 summary: |
-  I am a Fullstack Developer, experienced in frontend, and backend technologies, in addition to Linux, the cloud, and scripting. I am currently studying to get my Bachelor's degree in Computer Science. I have 1 year of work experience.
+  As a Fullstack Developer with 1 year of work experience, I bring expertise in both frontend and backend development, as well as Linux and cloud technologies.
+  
+  I am a hardworking and ambitious individual, with a passion for crafting high-quality code.
+  
+  My favorite programming languages include Typescript, Python, German, and Ruby.
+  
+  I am actively seeking new opportunities to contribute my skills and continue growing as a developer.
+
   
 skills:
   - API Development

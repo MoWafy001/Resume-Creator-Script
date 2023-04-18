@@ -1,0 +1,144 @@
+/* A resume with two columns */
+
+:root{
+  --color-1: #343A40;
+  --color-2: #F0F0F4;
+  --color-3: #0068d6;
+}
+
+body{
+  margin: 0;
+  /* background: var(--color-2); */
+  font-family: sans-serif;
+}
+
+.content{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.col{
+  padding: 1rem 2rem;
+}
+
+.col:first-child{
+  width: calc(35% - 4rem);
+  /* dark modern gray */
+  background: var(--color-1);
+  color: var(--color-2);
+}
+
+.col:last-child{
+  width: calc(65% - 4rem);
+}
+
+.item{
+  break-inside: avoid;
+}
+
+a{
+  /* modern blue */
+  color: var(--color-3);
+  text-decoration: none;
+}
+
+.full-name{
+  font-size: 2rem;
+  font-weight: bold;
+  position: relative;
+  z-index: 1;
+}
+.full-name::first-letter{
+  background: var(--color-3);
+  color: var(--color-2);
+  padding: 0 0.5rem;
+}
+/* underline */
+.full-name::before{
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0.2rem;
+  background: var(--color-3);
+  z-index: -1;
+}
+
+.job-title{
+  font-size: 1.5rem;
+  font-weight: bold;
+  /* font-family: serif; */
+  margin: 1.5rem 0;
+}
+
+
+.link{
+  display: inline-block;
+  background: var(--color-2);
+  color: var(--color-1);
+  font-size: 0.9rem;
+  padding: 0.5rem 1rem;
+  margin: 0.3rem 0rem;
+}
+
+.link.clickable{
+  color: var(--color-3);
+  font-weight: bold;
+}
+
+.section-title{
+  font-weight: bold;
+  background: var(--color-3);
+  color: var(--color-2);
+  padding: 0.5rem 1rem;
+  margin: 1rem 0;
+}
+
+.summary-section pre{
+  margin: 0.5rem 0;
+  background: var(--color-2);
+  padding: 1rem;
+  color: var(--color-1);
+  white-space: pre-wrap;
+
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.skills{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.skills li{
+  background: var(--color-2);
+  color: var(--color-1);
+  padding: 0.5rem 1rem;
+  margin: 0.2rem 0.2rem;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.item h2{
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 0.5rem 0;
+}
+
+.item{
+  border-bottom: 1px solid var(--color-1);
+}
+.item:last-child{
+  border-bottom: none;
+}
+
+.experience, .education, .projects{
+  break-inside: avoid;
+}
