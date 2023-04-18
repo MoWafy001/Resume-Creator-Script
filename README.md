@@ -1,5 +1,4 @@
-![image](https://user-images.githubusercontent.com/47895671/183772428-71ee41ec-d5dc-4219-90a9-f91f83a3dd1b.png)
-
+![image](https://user-images.githubusercontent.com/47895671/232782487-3b04eaaf-c40b-442e-8085-d92e4ceb4242.png)
 
 # Resume Creator
 This python script creates PDF resumes using variables from a YAML file. You can give it a YAML file to use, or a directory if you want to process multiple YAML files one after another. If no file name, or directory was passed, it will look for `vars.yaml` as its input YAML file by default.
