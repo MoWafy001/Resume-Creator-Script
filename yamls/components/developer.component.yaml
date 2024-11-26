@@ -8,14 +8,8 @@ template: Default
 primary color: "222222"
 
 summary: |
-  As a Fullstack Developer with 1 year of work experience, I bring expertise in both frontend and backend development, as well as Linux and cloud technologies.
-  
-  I am a hardworking and ambitious individual, with a passion for crafting high-quality code.
-  
-  My favorite programming languages include Typescript, Python, German, and Ruby.
-  
-  I am actively seeking new opportunities to contribute my skills and continue growing as a developer.
-
+  Software Engineer with 3-4 years of experience specializing in back-end development, with additional expertise in front-end development and DevOps.
+  A passionate Linux enthusiast. I enjoy coding and building projects, even if they are solely for personal use—like the script I wrote just to generate this resume. Known for the ability to quickly adapt to new environments and acquire new skills to tackle challenges effectively.
   
 skills:
   - API Development
@@ -53,55 +47,86 @@ skills:
   - TypeScript
 
 experience:
-  - Backend Developer, Faayiz, Part Time:
-      - Aug 2022 - Present
+  - Backend Software Engineer, Freelance:
+      - Feb 2024 - Present (10 months)
       - |
-        - Started as an Intern then part time
-        - Built RESTful APIs
-        - Worked with Micoservices
-        - Managed MongoDB databases
-        - Wrote scripts
-        - Worked with Docker
+        During this period of freelancing, I worked with clients from different countries, like the US, Germany, Egypt, and Saudi Arabia.
+        I designed, developed and deployed frontend, backend, and desktop applications.
+        I was not limited to a single stack or type of projects, as shown in the list of highlighted skils below.
+        
+        Highlighted skills: NestJS - Back-End Web Development - Microservices - Flask - React.js - PHP - Laravel - SQL - NoSQL - Linux - Python
 
-        Highlighted skills: NestJS - TypeScript - Node JS - MongoDB - API Development - Docker
-
-  - Intern Backend Developer, Airdonex:
-      - Sep 2021 - Dec 2021
+  - Junior Backend Developer, Owais Capital:
+      - May 2023 - Feb 2024 (10 months)
       - |
-        Highlighted skills: Django - PostgreSQL - Python
+        Designed and implemented new features for a FinTech application following the micro services architecture while using Kubernetes
+
+        Highlighted skills: NestJS - TypeScript - Node.js - AWS - Microservices - Git - API Development
+
+  - Backend Developer, Faayiz QSTP-LLC:
+      - Aug 2022 - Jul 2023 (1 year)
+      - |
+        Started as an intern then switched to working part-time.
+        I was responsible for designing and implementing backend services or mobile and web applications.
+
+        Highlighted skills: NestJS - MongoDB - Docker - TypeScript - Node.js - Git - API Development - Microservices
+
+  - Backend Committee Member, Google Developer Student Clubs, Damanhour University:
+      - Aug 2021 - Jun 2022 (1 year)
+      - |
+        As a school actively, I joined Google's developer student club at my college.
+        I included this one because it has Google in the name...
+
+        Highlighted skills: Team Collaboration
+
+  - Backend Developer, Airdonex, Internship:
+      - Sep 2021 - Dec 2021 (4 months)
+      - |
+        My first internship.
+
+        Highlighted skills: Django - PostgreSQL - Python - Git - API Development
 
   - Freelance Fullstack Developer:
-      - Mar 2021 - May 2021
+      - Mar 2021 - May 2021 (3 months)
       - |
-        - Created a web application to convert speech to text
-        - Created a Linux Systemd service to find and convert medical image files (SVS files) to another format (DZI) to be used by another app.
-        - Created an API to track the conversion of files
-        - Created a web app to view the DZI files on the server
+        - Built a speech-to-text API and a file conversion service.
+        - Developed a Linux systemd service for automating server tasks.
+        - Created a web app to view DZI(Deep Zoom Image) files.
 
-        Highlighted skills: Linux - Flask - Python - API Development - Systemd
+        Highlighted skills: Flask - Python - Linux - API Development - Systemd
 
 education:
-  - Computer Science, Bachelor's degree, Damanhour University:
+  - Bachelor's in Computer Science, Damanhour University:
       - "2020 - 2024"
       - |
-        Undergrad Student, GPA: 3.6
+        GPA: 3.6
 
-  - React Developement Cross-Skilling Nanodegree, Udacity:
+  - React Development Cross-Skilling Nanodegree, Udacity:
       - "2022"
       - |
-        Highlighted skills: React JS - Redux
+        Highlighted skills: React.js - Redux
 
-  - Advanced Web Development Nano Degree, Udacity:
+  - Advanced Web Development Nanodegree, Udacity:
       - "2021"
       - |
         Highlighted skills: Flask - API Development - Backend Development - Model View Controller
 
-  - Web Development Professional Nano Degree, Udacity:
+  - Web Development Professional Nanodegree, Udacity:
       - "2020"
       - |
-        Highlighted skills: Node JS - Building responsive pages - Integrating APIs
+        Highlighted skills: Node.js - Responsive Design - API Integration
 
-  - Intermediate Python, DataCamp:
+  - Database Design, DataCamp:
       - "2022"
       - |
-        Highlighted skills: Python
+        Highlighted skills: Database Design
+
+  - InnovEgypt Entrepreneurship Training, ITIDA:
+      - "2022"
+      - |
+        Credential ID: C0297 S22T0421
+
+  - Google Cloud Platform Fundamentals, Pluralsight:
+      - "2021"
+      - |
+        Highlighted skills: Cloud Infrastructure - GCP
