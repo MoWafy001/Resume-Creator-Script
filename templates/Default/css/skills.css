@@ -8,9 +8,9 @@
 }
 .skills li{
     display: block;
-    margin: 0.5rem;
-    padding: 0.6rem 0.7rem;
-    font-size: 1.2rem;
+    margin: 0.2rem;
+    padding: 0.2rem 0.3rem;
+    font-size: 0.8rem;
     border: 1px solid #0006;
     box-shadow: 0.3rem 0.3rem 0 0 #0006;
     border-radius: .3rem;
