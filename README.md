@@ -4,22 +4,7 @@
 This python script creates PDF resumes using variables from a YAML file. You can give it a YAML file to use, or a directory if you want to process multiple YAML files one after another. If no file name, or directory was passed, it will look for `vars.yaml` as its input YAML file by default.
 
 # Install requirements
-The script uses `pdfkit` which depends on `wkhtmltopdf`.
-
-Install wkhtmltopdf:
-
-Debian/Ubuntu:
-```
-$ sudo apt-get install wkhtmltopdf
-```
-
-macOS:
-```
-$ brew install homebrew/cask/wkhtmltopdf
-```
-If you are using Windows, I don't know, search for how to install wkhtmltopdf.
-
-Now, installing the required libraries
+Installing the required libraries
 ```
 pip install -r requirements.txt
 ```
@@ -31,7 +16,7 @@ or pip3 for python3
 Look in the `yamls` directory for examples.
 
 ```yaml
-template: Compact
+template: Default
 
 # color in hex: rrggbb
 primary color: 008080
