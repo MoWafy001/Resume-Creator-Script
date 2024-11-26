@@ -14,6 +14,7 @@ header{
     font-size: 3rem;
     margin: 1rem;
     margin-bottom: 0;
+    text-align: center;
 }
 .job-title{
     position: relative;
@@ -23,6 +24,7 @@ header{
     margin: 0.5rem;
     margin-bottom: 1.5rem;
     padding-bottom: 0.2rem;
+    text-align: center;
 }
 
 .job-title::after{

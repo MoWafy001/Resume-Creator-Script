@@ -1,28 +1,31 @@
-import pdfkit
+from weasyprint import HTML, CSS
 import os
 
 
-options = {
-    'encoding': "UTF-8",
-    'custom-header': [
-        ('Accept-Encoding', 'gzip')
-    ],
-    'no-outline': None
-}
-
-
 def create_pdf(layout, file_name, template, script_dir):
+    # Load CSS file paths automatically from the CSS directory
+    dir_name = os.path.join(script_dir, 'templates', template, 'css')
 
+    # Default CSS with fallback margins
+    default_css = """
+    @page {
+        size: A4 auto;
+        margin: 0; /* Default margins */
+    }
+    """
 
-    # load the css file names automaticlly from the css directory
-    dir_name = f'{script_dir}/templates/{template}/css'
-    css = list(map(lambda x: f"{dir_name}/{x}" , os.listdir(dir_name)))
+    css_files = [
+        CSS(string=default_css),
+        *[CSS(filename=os.path.join(dir_name, css_file)) for css_file in os.listdir(dir_name) if css_file.endswith('.css')]
+    ]
 
+    # Ensure the output directory exists
+    output_dir = os.path.join(script_dir, 'out')
+    if not os.path.exists(output_dir):
+        os.mkdir(output_dir)
 
-    # Creates out/ if doesn't exist    
-    if 'out' not in os.listdir(script_dir):
-        os.mkdir(f'{script_dir}/out')
+    # Generate the PDF
+    output_path = os.path.join(output_dir, f'{file_name}.pdf')
+    HTML(string=layout).write_pdf(output_path, stylesheets=css_files)
 
-
-    # create the PDF resume
-    pdfkit.from_string(layout, f'{script_dir}/out/{file_name}.pdf', options=options, css=css)
+    print(f"PDF created at: {output_path}")

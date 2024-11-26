@@ -2,7 +2,7 @@
 inherit:
   - $/general.component.yaml
 
-template: Unnamed
+template: Default
 
 # color in hex: rrggbb
 primary color: "222222"
