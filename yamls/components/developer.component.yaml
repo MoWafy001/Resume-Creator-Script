@@ -52,29 +52,6 @@ skills:
   - Scripting
   - TypeScript
 
-projects:
-  - Zoom Clone:
-      - |
-        A simple web video, and audio call app using peer-to-peer, and socket connections.
-
-        Highlighted skills: SocketIO - PeerJS - NodeJS
-        GitHub: https://github.com/MoWafy001/zoom-clone-2.0
-
-  - Automatic File Converter/ Viewer:
-      - |
-        - First Part  | Python Systemd service to automatically convert huge SVS images into DZI (Deep Zoom Images) 
-        - Second Part | Web API, and a web viewer for the DZI files.
-
-        Highlighted Skills: Python - Linux - Systemd - API Development - Web Development
-
-  - Resume Creator:
-      - |
-        - Automatic creator of resumes using YAML files to fill templates.
-        - A custom template engine and syntax was created for this project
-        - This resume, and its template was created using this code.
-
-        Highlighted Skills: Python - Template Engines
-
 experience:
   - Backend Developer, Faayiz, Part Time:
       - Aug 2022 - Present

@@ -31,8 +31,11 @@ class HTMLParser:
 
         for block in blocks:
             block_name, dep = self.get_block_name_and_dep(block)
-
             block_html = self.block_to_html(block_name, dep)
+            if not block_html:
+                html = html.replace(f"{BLOCK_SIMBOL}{block}{BLOCK_SIMBOL}", '')
+                continue
+
             block_html = self.parse_html(block_html)
 
             html = self.symbol_to_value(html, BLOCK_SIMBOL,
